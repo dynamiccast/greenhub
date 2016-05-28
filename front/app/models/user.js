@@ -3,6 +3,6 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
 
-  "created-at": attr('date'),
-  "updated-at": attr('date')
+  createdAt: attr('date'),
+  updatedAt: attr('date')
 });
