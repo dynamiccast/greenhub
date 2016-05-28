@@ -17,7 +17,7 @@ export default Ember.Route.extend({
     return this.store.findAll('user')
       .then((users) => {
 
-	var userNumber = 1;
+	var userNumber = 0;
 
 	users.forEach((user) => {
 

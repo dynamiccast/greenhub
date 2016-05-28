@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
 
   application: Ember.inject.controller(),
 
-  totalNumber: 1, // There is always at least one greener (you)
+  totalNumber: 0, // There is always at least one greener (you)
   totalWater: 0,
   totalElectricty: 0,
   totalCO2: 0,
