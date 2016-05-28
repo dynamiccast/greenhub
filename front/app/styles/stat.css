@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+.stat {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+
+.grow {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #f7b9b9;
+    -webkit-transition: height 2s; /* Safari */
+    transition: height 4s;
+}
+
+.bar0 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+}
+
+.bar1 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.bar2 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.bar3 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 30%;
+}
+
+.bar4 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 40%;
+}
+
+.bar5 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 50%;
+}
+
+.bar6 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 60%;
+}
+
+.bar7 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 70%;
+}
+
+.bar8 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 80%;
+}
+
+.bar9 {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    margin-left: 90%;
+}
