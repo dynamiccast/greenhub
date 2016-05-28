@@ -4,10 +4,11 @@ export default Ember.Route.extend({
 
   model: function() {
     let user = this.store.createRecord('user', {
-      createdAt: new Date,
-      updatedAt: new Date
+      createdAt: new Date(),
+      updatedAt: new Date()
     });
 
     user.save();
+    return user;
   }
 });

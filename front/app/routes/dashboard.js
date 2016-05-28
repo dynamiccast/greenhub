@@ -13,19 +13,11 @@ export default Ember.Route.extend({
 
   },
 
-  schedulePing: function() {
-
-    Ember.run.later((() => {
-      this.schedulePing();
-    }), this.REFRESH_INTERVAL);
-
-  }.on('init'),
-
   model: function() {
     return this.store.findAll('user')
       .then((users) => {
 
-	var userNumber = 1;
+	var userNumber = 0;
 
 	users.forEach((user) => {
 

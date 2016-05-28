@@ -6,8 +6,9 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
-  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.ttf');
-  app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+
+  app.import('bower_components/open-sans-fontface/fonts/Semibold/OpenSans-Semibold.ttf');
+
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
