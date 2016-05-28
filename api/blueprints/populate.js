@@ -1,1 +1,5 @@
-module.exports = require('sails-generate-ember-blueprints/templates/basic/api/blueprints/populate.js');
+module.exports = function findRecords(req, res) {
+
+  res.status(501); // Not implemented
+  return res.send(null);
+};
