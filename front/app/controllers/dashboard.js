@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
 
   totalNumber: 0, // There is always at least one greener (you)
   totalWater: 0,
-  totalElectricty: 0,
+  totalElectricity: 0,
   totalCO2: 0,
 
   schedulePing: function() {
