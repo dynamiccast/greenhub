@@ -1,0 +1,13 @@
+.navbar-nav a.active {
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: rgb(156, 189, 53);
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(156, 189, 53);
+    border-radius: 5px;
+}
