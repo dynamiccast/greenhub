@@ -38,7 +38,7 @@ export default Ember.Route.extend({
 	});
 
 	this.scheduleRefresh();
-	this.controllerFor('dashboard').set('totalNumber', userNumber)
+	this.controllerFor('dashboard').set('totalNumber', userNumber);
 	return users;
       });
   }
