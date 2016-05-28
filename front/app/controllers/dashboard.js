@@ -32,7 +32,7 @@ export default Ember.Controller.extend({
 	current = 0;
       }
 
-      Ember.$(".bar" + current).children('.grow').css('height', (this.get('stats.' + current) * 10) + "%");
+      Ember.$(".bar" + current).children('.grow').css('height', (this.get('stats.' + current) * 2) + "px");
       current++;
     }
 
