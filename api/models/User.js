@@ -7,7 +7,23 @@
 
 module.exports = {
 
+  autoCreatedAt: false,
+  autoUpdatedAt: false,
   attributes: {
-
+    "created-at": {
+      columnName: 'cre_dt',
+      type: 'datetime',
+      defaultsTo: function() {return new Date();}
+    },
+    "updated-at": {
+      columnName: 'upd_dt',
+      type: 'datetime',
+      defaultsTo: function() {return new Date();}
+    }
+  },
+  //Resonsible for actually updating the 'updateDate' property.
+  beforeUpdate:function(values,next) {
+    values.updateDate= new Date();
+    next();
   }
 };
