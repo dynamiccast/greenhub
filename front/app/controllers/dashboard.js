@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 
   application: Ember.inject.controller(),
+  boySpeed: 3, // Animation takes 3 seconds by default
 
   truncate: function(num, places) {
     return Math.trunc(num * Math.pow(10, places)) / Math.pow(10, places);
@@ -29,6 +30,14 @@ export default Ember.Controller.extend({
 
     }), 1000);
 
-  }.on('init')
+  }.on('init'),
+
+  actions: {
+    easterEggs: function() {
+
+      this.set('boySpeed', this.get('boySpeed') - 0.2);
+      Ember.$(".boy_top").css("animation-duration",  this.get('boySpeed') + "s");
+    }
+  }
 
 });
