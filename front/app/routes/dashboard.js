@@ -25,7 +25,7 @@ export default Ember.Route.extend({
     return this.store.findAll('user')
       .then((users) => {
 
-	var recentUser = [];
+	var userNumber = 1;
 
 	users.forEach((user) => {
 
@@ -33,12 +33,13 @@ export default Ember.Route.extend({
 	  time.setSeconds(time.getSeconds() - this.ALLOWED_IDLE);
 
 	  if (user.get('updatedAt') > time) {
-	    recentUser.push(user);
+	    userNumber = userNumber + 1;
 	  }
 	});
 
 	this.scheduleRefresh();
-	return recentUser;
+	this.controllerFor('dashboard').set('totalNumber', userNumber)
+	return users;
       });
   }
 });
