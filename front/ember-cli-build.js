@@ -9,8 +9,6 @@ module.exports = function(defaults) {
 
   app.import('bower_components/open-sans-fontface/fonts/Semibold/OpenSans-Semibold.ttf');
 
-  app.import('bower_components/font-awesome/fonts/fontawesome-webfont.ttf');
-  app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
