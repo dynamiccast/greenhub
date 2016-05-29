@@ -18,6 +18,20 @@ export default Ember.Controller.extend({
     return this.truncate(this.get('totalNumber') * (203 / 365 / 24), 2);
   }.property('totalNumber'),
 
+  timestampStart:1464364800,
+
+  getCurrentTimestamp: function(){
+    return Math.floor(Date.now() /1000);
+  },
+
+  totalCO2Hackathon: function(){
+      return this.truncate(this.get('totalNumber') * (203 / 365 / 24 / 60) * (this.getCurrentTimestamp() - this.get('timestampStart')) , 2);
+  }.property('totalNumber'),
+
+  totalElectricityHackathon: function() {
+    return this.truncate(this.get('totalNumber') * (346 / 365 / 24 / 60) * (this.getCurrentTimestamp() - this.get('timestampStart')) , 2);
+  }.property('totalNumber'),
+
   currentIteration: 0,
   stats: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 
@@ -32,7 +46,7 @@ export default Ember.Controller.extend({
 	current = 0;
       }
 
-      Ember.$(".bar" + current).children('.grow').css('height', (this.get('stats.' + current) * 10) + "%");
+      Ember.$(".bar" + current).children('.grow').css('height', (this.get('stats.' + current) * 2) + "px");
       current++;
     }
 
