@@ -33,7 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/*': { controller: 'App', action: 'serve', skipAssets: true, skipRegex: /^\/api\/.*$/ },
-  'patch /:model/:id': 'PatchController.routeToUpdate'
+  'patch /api/:model/:id': 'PatchController.routeToUpdate'
 
   /***************************************************************************
   *                                                                          *
