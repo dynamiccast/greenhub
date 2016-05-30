@@ -6,12 +6,7 @@ RUN npm install -g ember-cli bower sails pm2
 COPY ./ /opt
 WORKDIR /opt
 
-RUN npm install && \
-    cd front && \
-    npm install && \
-    bower install --allow-root
-
-RUN cd front &&  ember build --environment=production --output-path=../assets/
+RUN sh build.sh
 
 EXPOSE 1337
 
