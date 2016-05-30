@@ -7,7 +7,7 @@ This application is developped with *Ember.js* and *Sails.js*. It uses *sails-ge
 
 Greenhub is a webpage where everyone who is connected can see the estimated global footprint of the group.
 
-![Alt text](//screenshot.png?raw=true "Greenhub screenshot")
+![Alt text](/screenshot.png?raw=true "Greenhub screenshot")
 
 # Run greenhub at home
 
