@@ -1,5 +1,7 @@
 # Greenhub
 
+[![Code Climate](https://codeclimate.com/github/dynamiccast/greenhub-hackathon-valtech/badges/gpa.svg)](https://codeclimate.com/github/dynamiccast/greenhub-hackathon-valtech)
+
 Greenhub is a simple web application to give people more insight on how much resources the web can use.
 It was developed during the Valtech hackathon which topic was about *pollution* (http://hackathon.valtech.fr/) #HackValtech
 
